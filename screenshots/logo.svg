@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 104 104" role="img" aria-labelledby="title">
+  <title id="title">HyperliquidX logo</title>
+  <defs>
+    <linearGradient id="icon" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#97fce3" />
+      <stop offset="1" stop-color="#97fce3" />
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="104" height="104" rx="26" fill="url(#icon)" />
+    <rect x="1" y="1" width="102" height="102" rx="25" fill="none" stroke="#e0fff1" stroke-opacity=".4" />
+    <path d="M20 54H31L39 32L50 75L62 27L73 54H85" fill="none" stroke="#14251f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

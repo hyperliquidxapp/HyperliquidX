@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480" role="img" aria-labelledby="title desc">
-  <title id="title">HyperliquidX — Your trading workspace. Native to Mac.</title>
-  <desc id="desc">Mint waveform icon and HyperliquidX wordmark on a dark background with a subtle market-chart motif.</desc>
+  <title id="title">HyperliquidX — Best-in-class Hyperliquid workspace built for traders. Fast, modern, and delightful.</title>
+  <desc id="desc">Mint waveform icon and HyperliquidX wordmark with the slogan: Best-in-class Hyperliquid workspace built for traders. Fast, modern, and delightful. Dark background with a subtle market-chart motif.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#162622" />
@@ -8,8 +8,8 @@
       <stop offset="1" stop-color="#182b25" />
     </linearGradient>
     <linearGradient id="icon" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#c2f2df" />
-      <stop offset="1" stop-color="#81baa3" />
+      <stop stop-color="#97fce3" />
+      <stop offset="1" stop-color="#97fce3" />
     </linearGradient>
     <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
       <path d="M64 0H0V64" fill="none" stroke="#c2f2df" stroke-opacity=".035" />
@@ -30,13 +30,8 @@
     <path d="M20 54H31L39 32L50 75L62 27L73 54H85" fill="none" stroke="#14251f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
   </g>
   <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <text x="800" y="250" fill="#e6e8e6" font-size="64" font-weight="650" letter-spacing="-2.5">Hyperliquid<tspan fill="#9ed9bf">X</tspan></text>
-    <text x="800" y="300" fill="#a8b9b1" font-size="25" font-weight="400">Your trading workspace. Native to Mac.</text>
-    <g font-size="13" font-weight="500" letter-spacing="1.8" fill="#a4c7b8">
-      <text x="604" y="387">LIVE MARKETS</text>
-      <text x="800" y="387">LOCAL CONTROL</text>
-      <text x="997" y="387">WORKSPACE AGENT</text>
-    </g>
-    <g fill="#517263"><circle cx="698" cy="382" r="2" /><circle cx="902" cy="382" r="2" /></g>
+    <text x="800" y="250" fill="#ffffff" font-size="64" font-weight="650" letter-spacing="-2.5">Hyperliquid<tspan fill="#97fce3">X</tspan></text>
+    <text x="800" y="300" fill="#ffffff" font-size="25" font-weight="400">Best-in-class Hyperliquid workspace built for traders.</text>
+    <text x="800" y="338" fill="#ffffff" font-size="25" font-weight="400">Fast, modern, and delightful.</text>
   </g>
 </svg>
