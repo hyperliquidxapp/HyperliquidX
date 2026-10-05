@@ -1,21 +1,4 @@
-.build/
-.swiftpm/
 .DS_Store
-dist/
-**/xcuserdata/
-*.xcuserstate
 
-# This checkout is the public issue tracker. Application code belongs in HyperliquidXApp.
-/HyperliquidXApp/
+# Independent private source checkout, including its website checkout and build output.
 /App/
-/Sources/
-/Tests/
-/HyperliquidX.xcodeproj/
-/Package.swift
-/Package.resolved
-/.swift-format
-/.swiftlint.yml
-/THIRD_PARTY_NOTICES.md
-/docs/
-/scripts/
-/website/
