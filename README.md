@@ -34,6 +34,10 @@ HyperliquidX is in active development.
 
 ## Have a problem?
 
+This public repository is for application issues, bug reports and feature requests.
+Application source and build automation are maintained in a separate private repository.
+Downloads will be published on [hypexapp.xyz](https://hypexapp.xyz).
+
 - 🐛 [Open a GitHub issue](https://github.com/hyperliquidxapp/HyperliquidX/issues/new) for bugs, questions or feature requests.
 - 📋 Include your macOS version, app build, network, steps to reproduce and a screenshot when helpful. Remove wallet secrets and sensitive account details from attachments.
 - 🐦 Mention [@HyperliquidX](https://x.com/hyperliquid_app) in X/Twitter with your thoughts.
@@ -46,4 +50,3 @@ HyperliquidX is built for traders who want their markets, tools and decisions in
 If you'd like to support the project, [star the repository](https://github.com/hyperliquidxapp/HyperliquidX) or share your feedback in X and mention [@HyperliquidX](https://x.com/hyperliquid_app). Every thoughtful report helps shape what comes next. 💚
 
 **The HyperliquidX team**
-
