@@ -36,7 +36,9 @@ HyperliquidX is in active development.
 
 This public repository is for application issues, bug reports and feature requests.
 Application source and build automation are maintained in a separate private repository.
-Downloads will be published on [hypexapp.xyz](https://hypexapp.xyz).
+Download the app from [hypexapp.xyz](https://hypexapp.xyz) or [GitHub Releases](https://github.com/hyperliquidxapp/HyperliquidX/releases).
+Each Release includes the DMG installer, version notes and its SHA-256 checksum.
+GitHub's automatic source archives contain this public issue tracker's materials, not the application source.
 
 - 🐛 [Open a GitHub issue](https://github.com/hyperliquidxapp/HyperliquidX/issues/new) for bugs, questions or feature requests.
 - 📋 Include your macOS version, app build, network, steps to reproduce and a screenshot when helpful. Remove wallet secrets and sensitive account details from attachments.

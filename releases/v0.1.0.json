@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "name": "HyperliquidX 0.1.0",
+  "body": "HyperliquidX 0.1.0\n\nInitial native macOS release, supporting Apple Silicon and Intel on macOS 14 or later.\n\nThe Release DMG workflow builds and verifies the installer, uploads it to the Cloudflare R2 hyperliquidx bucket and updates the download link at https://hypexapp.xyz after validating the public checksum.\n\nThis build uses ad-hoc signing and is not Apple notarized. If macOS blocks the first launch, users who trust the download can use System Settings > Privacy & Security > Open Anyway.\n\nThe application remains in active development. Real wallet, exchange lifecycle and native interaction acceptance are still pending; build and service tests do not establish mainnet trading readiness.\n\nPublic issue tracker: https://github.com/hyperliquidxapp/HyperliquidX/issues\n\n<!-- hyperliquidx-download:start -->\n## Download for macOS\n\n**[Download HyperliquidX 0.1.0 (.dmg)](https://downloads.hypexapp.xyz/releases/0.1.0/d57299139fcd0edb7dadd3f19d4abe4bcc3cfaf1f52c50e4c5a6a7dec03d5e12/HyperliquidX-0.1.0.dmg)**\n\nApple Silicon + Intel · 22.30 MiB (23382462 bytes)\n\nAd-hoc signed. Not Apple notarized.\n\n### SHA-256\n\n```text\nd57299139fcd0edb7dadd3f19d4abe4bcc3cfaf1f52c50e4c5a6a7dec03d5e12  HyperliquidX-0.1.0.dmg\n```\n\nVerify the downloaded installer in Terminal:\n\n```sh\nshasum -a 256 ~/Downloads/HyperliquidX-0.1.0.dmg\n```\n\nDrag HyperliquidX into Applications and launch it there.\nIf macOS blocks the first launch and you trust this download, use System Settings → Privacy & Security → Open Anyway.\n\nUse the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.\n<!-- hyperliquidx-download:end -->\n",
+  "url": "https://downloads.hypexapp.xyz/releases/0.1.0/d57299139fcd0edb7dadd3f19d4abe4bcc3cfaf1f52c50e4c5a6a7dec03d5e12/HyperliquidX-0.1.0.dmg",
+  "sha256": "d57299139fcd0edb7dadd3f19d4abe4bcc3cfaf1f52c50e4c5a6a7dec03d5e12",
+  "size": 23382462,
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "signing": "ad-hoc",
+  "notarized": false
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.1.1",
+  "name": "HyperliquidX 0.1.1",
+  "body": "Fixes a startup crash when loading the embedded HyperliquidCore framework in ad-hoc signed builds.\n\n- Use an ad-hoc signing profile that retains Hardened Runtime and permits the embedded framework without a Team ID.\n- Remove the development get-task-allow entitlement from the distributed app.\n- Execute the real app and embedded core during packaging, including from the finished DMG, so dynamic-library loading failures stop publication.\n- Include the branded drag-to-Applications installer layout.\n\nThis build is ad-hoc signed and is not Apple notarized. Drag HyperliquidX into Applications, then launch it there. If macOS blocks the first launch and you trust the download source, use System Settings > Privacy & Security > Open Anyway.\n\nPublic download: https://hypexapp.xyz\nIssues: https://github.com/hyperliquidxapp/HyperliquidX/issues\n\n<!-- hyperliquidx-download:start -->\n## Download for macOS\n\n**[Download HyperliquidX 0.1.1 (.dmg)](https://downloads.hypexapp.xyz/releases/0.1.1/2b7064933df602b8d9accbfc948e3b460f90757d5305b049b5bebd449cd83437/HyperliquidX-0.1.1.dmg)**\n\nApple Silicon + Intel · 21.79 MiB (22851555 bytes)\n\nAd-hoc signed. Not Apple notarized.\n\n### SHA-256\n\n```text\n2b7064933df602b8d9accbfc948e3b460f90757d5305b049b5bebd449cd83437  HyperliquidX-0.1.1.dmg\n```\n\nVerify the downloaded installer in Terminal:\n\n```sh\nshasum -a 256 ~/Downloads/HyperliquidX-0.1.1.dmg\n```\n\nDrag HyperliquidX into Applications and launch it there.\nIf macOS blocks the first launch and you trust this download, use System Settings → Privacy & Security → Open Anyway.\n\nUse the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.\n<!-- hyperliquidx-download:end -->\n",
+  "url": "https://downloads.hypexapp.xyz/releases/0.1.1/2b7064933df602b8d9accbfc948e3b460f90757d5305b049b5bebd449cd83437/HyperliquidX-0.1.1.dmg",
+  "sha256": "2b7064933df602b8d9accbfc948e3b460f90757d5305b049b5bebd449cd83437",
+  "size": 22851555,
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "signing": "ad-hoc",
+  "notarized": false
+}
