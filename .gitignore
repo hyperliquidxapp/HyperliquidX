@@ -2,3 +2,6 @@
 
 # Independent private source checkout, including its website checkout and build output.
 /App/
+
+# Local core source; excluded from the public issue and release repository.
+/HyperliquidCore/
