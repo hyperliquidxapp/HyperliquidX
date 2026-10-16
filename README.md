@@ -10,14 +10,15 @@
 
 <p align="center">
   <strong>A native macOS trading workspace for Hyperliquid.</strong><br />
-  <strong>Live markets, charts, positions and a local Agent — together on your desktop.</strong>
+
 </p>
 
 <img src="screenshots/workspace.png" alt="HyperliquidX macOS workspace showing ETH-PERP candlesticks, market watchlist, order book, recent trades and order entry" width="100%" />
 
-## Features
+ You can download the app from [hypexapp.xyz](https://hypexapp.xyz) or [GitHub Releases](https://github.com/hyperliquidxapp/HyperliquidX/releases).
+Each Release includes the DMG installer, version notes and its SHA-256 checksum.
 
-HyperliquidX is in active development. 
+## Features
 
 - 💻 **Native to Mac.** Built with SwiftUI and AppKit, with resizable panels, dark and light appearances, and support for macOS 14 or later.
 - ⚡ **Real-time data, managed by the client.** Persistent WebSocket feeds, heartbeat, reconnect, stale-data detection and frame-batched updates keep markets and account activity in sync. Market data runs independently of browser tabs; late snapshots cannot overwrite newer stream updates.
@@ -35,15 +36,14 @@ HyperliquidX is in active development.
 ## Have a problem?
 
 This public repository is for application issues, bug reports and feature requests.
-Application source and build automation are maintained in a separate private repository.
-Download the app from [hypexapp.xyz](https://hypexapp.xyz) or [GitHub Releases](https://github.com/hyperliquidxapp/HyperliquidX/releases).
-Each Release includes the DMG installer, version notes and its SHA-256 checksum.
-GitHub's automatic source archives contain this public issue tracker's materials, not the application source.
 
 - 🐛 [Open a GitHub issue](https://github.com/hyperliquidxapp/HyperliquidX/issues/new) for bugs, questions or feature requests.
-- 📋 Include your macOS version, app build, network, steps to reproduce and a screenshot when helpful. Remove wallet secrets and sensitive account details from attachments.
+
+- 📋 Remember to include your macOS version, app build, network, steps to reproduce and a screenshot when helpful. Remove wallet secrets and sensitive account details from attachments.
+
 - 🐦 Mention [@HyperliquidX](https://x.com/hyperliquid_app) in X/Twitter with your thoughts.
-- ⛽️ Join Our Community [Discord](https://discord.gg/eUnYXr5Rne)
+
+- ⛽️ Join Our Community [Discord](https://discord.gg/eUnYXr5Rne).
 
 ---
 
@@ -51,4 +51,4 @@ HyperliquidX is built for traders who want their markets, tools and decisions in
 
 If you'd like to support the project, [star the repository](https://github.com/hyperliquidxapp/HyperliquidX) or share your feedback in X and mention [@HyperliquidX](https://x.com/hyperliquid_app). Every thoughtful report helps shape what comes next. 💚
 
-**The HyperliquidX team**
+**The HyperliquidX Team**
