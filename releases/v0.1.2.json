@@ -1,0 +1,14 @@
+{
+  "version": "0.1.2",
+  "name": "HyperliquidX 0.1.2",
+  "body": "This update improves wallet connections, market-data recovery and desktop notifications.\n\n- Use a native WalletConnect connection panel with QR-code scanning and an explanation of native domain-verification limitations.\n- Restore multiple connected wallets, switch accounts without a biometric prompt, and disconnect each wallet independently. Unlock trading authorization separately with Touch ID or the Mac password.\n- Recover candles and order books after network changes; keep saved wallets when the relay is temporarily offline.\n- Improve fill notifications, add a test notification button, and stop repetitive balance-change desktop alerts.\n- Add configurable market-order slippage and clearer order estimates, plus expanded USDC deposit network routing.\n- Align account values and simplify the workspace by hiding the Agent entry points.\n- Consume the MIT-licensed HyperliquidCore as an independent Swift package.\n\nThis build is ad-hoc signed and is not Apple notarized. Drag HyperliquidX into Applications. If macOS blocks first launch and you trust the download, use System Settings → Privacy & Security → Open Anyway.\n\n<!-- hyperliquidx-download:start -->\n## Download for macOS\n\n**[Download HyperliquidX 0.1.2 (.dmg)](https://downloads.hypexapp.xyz/releases/0.1.2/4b2c6aac43dcf7ee7190ec5afc17eef787374d9a0e07b351e6c3234bd357cd6d/HyperliquidX-0.1.2.dmg)**\n\nApple Silicon + Intel · 28.01 MiB (29365590 bytes)\n\nAd-hoc signed. Not Apple notarized.\n\n### SHA-256\n\n```text\n4b2c6aac43dcf7ee7190ec5afc17eef787374d9a0e07b351e6c3234bd357cd6d  HyperliquidX-0.1.2.dmg\n```\n\nVerify the downloaded installer in Terminal:\n\n```sh\nshasum -a 256 ~/Downloads/HyperliquidX-0.1.2.dmg\n```\n\nDrag HyperliquidX into Applications and launch it there.\nIf macOS blocks the first launch and you trust this download, use System Settings → Privacy & Security → Open Anyway.\n\nUse the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.\n<!-- hyperliquidx-download:end -->\n",
+  "url": "https://downloads.hypexapp.xyz/releases/0.1.2/4b2c6aac43dcf7ee7190ec5afc17eef787374d9a0e07b351e6c3234bd357cd6d/HyperliquidX-0.1.2.dmg",
+  "sha256": "4b2c6aac43dcf7ee7190ec5afc17eef787374d9a0e07b351e6c3234bd357cd6d",
+  "size": 29365590,
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "signing": "ad-hoc",
+  "notarized": false
+}
