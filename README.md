@@ -13,7 +13,7 @@
 
 </p>
 
-<img src="screenshots/workspace.png" alt="HyperliquidX macOS workspace showing ETH-PERP candlesticks, market watchlist, order book, recent trades and order entry" width="100%" />
+<img src="screenshots/workspace.png" alt="HyperliquidX macOS workspace showing HYPE-USDC candlesticks, market watchlist, order book, recent trades, balances and order entry" width="100%" />
 
  You can download the app from [hypexapp.xyz](https://hypexapp.xyz) or [GitHub Releases](https://github.com/hyperliquidxapp/HyperliquidX/releases).
 Each Release includes the DMG installer, version notes and its SHA-256 checksum.

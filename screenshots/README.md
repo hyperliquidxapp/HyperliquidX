@@ -2,8 +2,8 @@
 
 - `banner.svg`: original dark-and-mint HyperliquidX banner.
 - `follow.svg`: local Follow badge linking to the GitHub organization configured in this repository's remote.
-- `workspace.png`: actual HyperliquidX workspace screenshot supplied by the user, showing ETH-PERP, watchlist, chart, order book, recent trades and execution panel.
+- `workspace.png`: the same HyperliquidX workspace screenshot used by the website (`App/website/screenshots/screenshot.png`), showing HYPE-USDC, watchlist, chart, order book, recent trades, balances and execution panel.
 
-To refresh the screenshot, replace `screenshots/workspace.png` with a new wide application-window capture. The current image is preserved exactly as supplied.
+To refresh the screenshot, copy the current website capture from `App/website/screenshots/screenshot.png` to `screenshots/workspace.png`. Preserve the image pixels and aspect ratio.
 
 Artwork and product copy are original to HyperliquidX.
