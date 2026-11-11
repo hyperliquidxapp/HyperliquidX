@@ -6,6 +6,35 @@
     <description>Stable HyperliquidX releases for macOS</description>
     <language>en</language>
     <item>
+      <title>0.1.11</title>
+      <sparkle:version>0.1.11</sparkle:version>
+      <sparkle:shortVersionString>0.1.11</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 11 Nov 2026 11:14:55 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.11</link>
+      <description><![CDATA[<p dir="auto">改进 macOS 14 崩溃报告涉及的 HTTP 并发请求和取消处理。</p>
+<ul dir="auto">
+<li>正式包、预览包、本地测试和 SDK CI 统一使用 Xcode 27.1／Swift 6.4，并校验具体编译器与 SDK 构建号。</li>
+<li>调整 HTTP 请求执行路径，保留请求大小限制、超时及取消行为。</li>
+<li>打包时运行真实的本地网络自检，覆盖并发请求、取消和恢复；可用 <code class="notranslate">--network-runtime-probe</code> 输出诊断结果。</li>
+</ul>
+<p dir="auto">macOS 14.6.1 的受影响设备暂时无法访问，因此尚未完成该系统的实机复测。新版本保留 macOS 14 部署目标；构建和测试记录会明确区分工具链一致性与旧系统运行验证。</p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.11/2282177a23e38f628e11e08e47aecad0418d2419fa95dc3065785527acb0370d/HyperliquidX-0.1.11.dmg" rel="nofollow">Download HyperliquidX 0.1.11 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 43.37 MiB (45481601 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">2282177a23e38f628e11e08e47aecad0418d2419fa95dc3065785527acb0370d  HyperliquidX-0.1.11.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.11.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
       <title>HyperliquidX 0.1.10</title>
       <sparkle:version>0.1.10</sparkle:version>
       <sparkle:shortVersionString>0.1.10</sparkle:shortVersionString>
