@@ -3,7 +3,7 @@ name: Publish public Release
 on:
   push:
     branches: [main]
-    paths: ['releases/**']
+    paths: ['releases/**', 'scripts/sparkle-appcast*', '.github/workflows/public-release.yml']
   workflow_dispatch:
     inputs:
       tag:
@@ -28,9 +28,22 @@ jobs:
         with:
           node-version: '22'
       - name: Test public release validation
-        run: node --test scripts/public-release.test.mjs
+        run: node --test scripts/*.test.mjs
       - name: Publish verified DMG and SHA-256 without application source
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.tag }}
         run: node scripts/public-release.mjs
+      - name: Generate Sparkle feed from published GitHub release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/sparkle-appcast.mjs
+          git config user.name 'HyperliquidX Release'
+          git config user.email 'release@hypexapp.xyz'
+          git add appcast.xml
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Sparkle appcast from public releases'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

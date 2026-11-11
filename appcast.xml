@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>HyperliquidX Updates</title>
+    <link>https://github.com/hyperliquidxapp/HyperliquidX/releases</link>
+    <description>Stable HyperliquidX releases for macOS</description>
+    <language>en</language>
+    <item>
+      <title>HyperliquidX 0.1.10</title>
+      <sparkle:version>0.1.10</sparkle:version>
+      <sparkle:shortVersionString>0.1.10</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 10 Nov 2026 09:05:56 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.10</link>
+      <description><![CDATA[<p dir="auto">HyperliquidX 0.1.10 fixes adding to an existing position after preparing a position action.</p>
+<ul dir="auto">
+<li>Use the standard Long/Short and Place Order flow to increase an existing position. Changing direction now clears stale close, protection or reversal draft state that could incorrectly reject the order.</li>
+<li>Preserve the entered quantity, price, order type and time-in-force when changing direction.</li>
+<li>Keep existing-order, entire-position protection and active-submission direction checks in place.</li>
+</ul>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.10/bd30ae1d7473902558497f7a1a33c10e14ff25372514ede07a3740ceb1c1c30e/HyperliquidX-0.1.10.dmg" rel="nofollow">Download HyperliquidX 0.1.10 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 44.35 MiB (46501809 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">bd30ae1d7473902558497f7a1a33c10e14ff25372514ede07a3740ceb1c1c30e  HyperliquidX-0.1.10.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.10.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.9</title>
+      <sparkle:version>0.1.9</sparkle:version>
+      <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Mon, 09 Nov 2026 14:32:02 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.9</link>
+      <description><![CDATA[<p dir="auto">HyperliquidX 0.1.9 improves startup reliability on macOS 14.</p>
+<ul dir="auto">
+<li>Address an early startup crash when the HTTP connection installs its network decoder by using a compatible SwiftNIO release.</li>
+<li>Check HTTP and WebSocket decoder compatibility before opening connections, and extend packaged-app verification on Apple Silicon and Intel.</li>
+<li>Add Settings → Privacy → Share crash reports with HyperliquidX, with a saved collection preference and an explanation of restart behavior.</li>
+</ul>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.9/428f7cdd89311e769c7350d30716905a665045ed58ae8125254a0dd05019bd8e/HyperliquidX-0.1.9.dmg" rel="nofollow">Download HyperliquidX 0.1.9 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 44.34 MiB (46495716 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">428f7cdd89311e769c7350d30716905a665045ed58ae8125254a0dd05019bd8e  HyperliquidX-0.1.9.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.9.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.8</title>
+      <sparkle:version>0.1.8</sparkle:version>
+      <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Thu, 05 Nov 2026 05:00:16 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.8</link>
+      <description><![CDATA[<p dir="auto">HyperliquidX 0.1.8 improves trading authorization, wallet management and order book reliability.</p>
+<ul dir="auto">
+<li>Enable Trading now requires only API Wallet authorization. HyperliquidX Builder fees are waived during early access; Hyperliquid's own trading fees still apply. Existing sessions can be reused, and pending wallet approval can be canceled. The dialog explains where to renew or revoke the session.</li>
+<li>Add watch-only wallets from Connect Wallet, and keep Manage Session authorization accessible across multiple wallets.</li>
+<li>Improve L4 depth and individual-order previews, snapshot consistency and reconnection handling. Reduce unnecessary order projections and fix excessive menu bar memory use.</li>
+<li>Improve HTTP compatibility on macOS 14 by disabling unused tracing. Add Firebase Crashlytics and release symbol uploads to help diagnose crashes.</li>
+<li>Refine order cancellation for watched accounts and unify trading action buttons.</li>
+<li>Exit an expanded chart with Escape, with a visible shortcut hint. Production builds stay on Mainnet.</li>
+</ul>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.8/e738ebc6df79b50aebd1afd2de6bcbbfdfb6ed9f5ef7ce1d192a1fa37d47abb8/HyperliquidX-0.1.8.dmg" rel="nofollow">Download HyperliquidX 0.1.8 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 44.32 MiB (46477873 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">e738ebc6df79b50aebd1afd2de6bcbbfdfb6ed9f5ef7ce1d192a1fa37d47abb8  HyperliquidX-0.1.8.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.8.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.4</title>
+      <sparkle:version>0.1.4</sparkle:version>
+      <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Sun, 25 Oct 2026 17:36:41 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.4</link>
+      <description><![CDATA[<h1 dir="auto">HyperliquidX 0.1.4</h1>
+<p dir="auto">This update improves trading-session management, order entry, account details and notifications.</p>
+<ul dir="auto">
+<li>Added per-wallet trading authorization durations from 1 hour to 6 months, expiry indicators, renewal controls and explicit revocation. Supported Team-signed builds securely save authorizations in the macOS Keychain and restore them with Touch ID or the Mac password. Locking or disconnecting preserves a saved authorization; revocation removes the HyperliquidX authorization at the exchange. Locking or sleeping the Mac suspends local signing.</li>
+<li>Unified Connect Wallet, Enable Trading and Place Order into one order-entry action. Valid saved authorizations can be unlocked locally. Unavailable sessions open session management and preserve the order draft instead of requesting an order signature from the main wallet.</li>
+<li>Fixed leverage adjustments that remained in Updating and improved cancellation and panel dismissal while waiting for a signature. Added direct order submission and entry TP/SL inputs with price, percentage and estimated profit/loss calculations.</li>
+<li>Expanded position and open-order details, including funding since the position opened, protection readouts, original and remaining order quantities, order values and the Time column. Improved alignment and close-order controls.</li>
+<li>Updated order notifications to use Order Placed and Order Filled ✅ with direction, quantity, token and price. Suppressed duplicate accepted/filled-state banners and reduceOnlyCanceled banners while retaining local records. Kept large-trade direction indicators, compact amounts and weighted average prices.</li>
+<li>Improved order-book refresh with fast complete snapshots, fallback handling, prepared depth rows and pipeline diagnostics. Charts can pan into future space while retaining the newest candle.</li>
+<li>Improved saved-wallet selection and reconnect handling, WalletConnect cancellation and readiness checks, and application identity with the HyperliquidX website and logo. Some wallets may still show Unknown origin because the integrated native SDK does not register origin proofs.</li>
+<li>Moved interface text into English localization resources with generated Swift accessors and release-time consistency checks. Refined session-management layout, button styling, action explanations and the expanded signing-data preview.</li>
+</ul>
+<p dir="auto">The macOS installer supports Apple Silicon and Intel and retains the existing ad-hoc signing policy. It is not Apple notarized. Protected Keychain session recovery requires a stable Team-signed build; ad-hoc releases do not enable that capability. The native-origin verification limitation is independent of the displayed application logo.</p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.4/0e6b69e5dec131004927bf2556b39aadc1efa422ebab65df0d339dc495bb9dd7/HyperliquidX-0.1.4.dmg" rel="nofollow">Download HyperliquidX 0.1.4 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 29.43 MiB (30855472 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">0e6b69e5dec131004927bf2556b39aadc1efa422ebab65df0d339dc495bb9dd7  HyperliquidX-0.1.4.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.4.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.3</title>
+      <sparkle:version>0.1.3</sparkle:version>
+      <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Mon, 19 Oct 2026 09:05:15 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.3</link>
+      <description><![CDATA[<h1 dir="auto">HyperliquidX 0.1.3</h1>
+<p dir="auto">This patch improves the order book, recent trades, market notifications and wallet visibility.</p>
+<ul dir="auto">
+<li>Added order book price grouping and a switch between token and quote-currency units for Size and Total. Quote totals use each level's price, and changing grouping clears stale quotes while preserving the chart.</li>
+<li>Unified order book and Recent trades price formatting so prices retain trailing zeros at the displayed precision.</li>
+<li>Added Hyperliquid Explorer links for recent trades with valid transaction hashes, token labels for trade sizes, and improved column alignment.</li>
+<li>Improved large-trade notifications with compact amounts, buy/sell indicators and quantity-weighted average prices for grouped trades. Initial snapshots and replayed trades remain quiet.</li>
+<li>Show the currently selected wallet in the top-right account button as the first six and last four address characters; switching wallets updates the label.</li>
+<li>Fixed SwiftLint issues required by the native release build.</li>
+</ul>
+<p dir="auto">The macOS installer supports Apple Silicon and Intel. This release uses the existing ad-hoc signing policy and is not Apple notarized.</p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.3/7fbbcb7c1c91a20141d72754f48cad89e29d31a346ba292f0e00f92cd1510b7d/HyperliquidX-0.1.3.dmg" rel="nofollow">Download HyperliquidX 0.1.3 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 28.12 MiB (29485360 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">7fbbcb7c1c91a20141d72754f48cad89e29d31a346ba292f0e00f92cd1510b7d  HyperliquidX-0.1.3.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.3.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.2</title>
+      <sparkle:version>0.1.2</sparkle:version>
+      <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Sat, 17 Oct 2026 06:56:14 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.2</link>
+      <description><![CDATA[<p dir="auto">This update improves wallet connections, market-data recovery and desktop notifications.</p>
+<ul dir="auto">
+<li>Use a native WalletConnect connection panel with QR-code scanning and an explanation of native domain-verification limitations.</li>
+<li>Restore multiple connected wallets, switch accounts without a biometric prompt, and disconnect each wallet independently. Unlock trading authorization separately with Touch ID or the Mac password.</li>
+<li>Recover candles and order books after network changes; keep saved wallets when the relay is temporarily offline.</li>
+<li>Improve fill notifications, add a test notification button, and stop repetitive balance-change desktop alerts.</li>
+<li>Add configurable market-order slippage and clearer order estimates, plus expanded USDC deposit network routing.</li>
+<li>Align account values and simplify the workspace by hiding the Agent entry points.</li>
+<li>Consume the MIT-licensed HyperliquidCore as an independent Swift package.</li>
+</ul>
+<p dir="auto">This build is ad-hoc signed and is not Apple notarized. Drag HyperliquidX into Applications. If macOS blocks first launch and you trust the download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.2/4b2c6aac43dcf7ee7190ec5afc17eef787374d9a0e07b351e6c3234bd357cd6d/HyperliquidX-0.1.2.dmg" rel="nofollow">Download HyperliquidX 0.1.2 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 28.01 MiB (29365590 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">4b2c6aac43dcf7ee7190ec5afc17eef787374d9a0e07b351e6c3234bd357cd6d  HyperliquidX-0.1.2.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.2.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.1</title>
+      <sparkle:version>0.1.1</sparkle:version>
+      <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 06 Oct 2026 18:23:00 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.1</link>
+      <description><![CDATA[<p dir="auto">Fixes a startup crash when loading the embedded HyperliquidCore framework in ad-hoc signed builds.</p>
+<ul dir="auto">
+<li>Use an ad-hoc signing profile that retains Hardened Runtime and permits the embedded framework without a Team ID.</li>
+<li>Remove the development get-task-allow entitlement from the distributed app.</li>
+<li>Execute the real app and embedded core during packaging, including from the finished DMG, so dynamic-library loading failures stop publication.</li>
+<li>Include the branded drag-to-Applications installer layout.</li>
+</ul>
+<p dir="auto">This build is ad-hoc signed and is not Apple notarized. Drag HyperliquidX into Applications, then launch it there. If macOS blocks the first launch and you trust the download source, use System Settings &gt; Privacy &amp; Security &gt; Open Anyway.</p>
+<p dir="auto">Public download: <a href="https://hypexapp.xyz" rel="nofollow">https://hypexapp.xyz</a><br>
+Issues: <a href="https://github.com/hyperliquidxapp/HyperliquidX/issues">https://github.com/hyperliquidxapp/HyperliquidX/issues</a></p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.1/2b7064933df602b8d9accbfc948e3b460f90757d5305b049b5bebd449cd83437/HyperliquidX-0.1.1.dmg" rel="nofollow">Download HyperliquidX 0.1.1 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 21.79 MiB (22851555 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">2b7064933df602b8d9accbfc948e3b460f90757d5305b049b5bebd449cd83437  HyperliquidX-0.1.1.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.1.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+    <item>
+      <title>HyperliquidX 0.1.0</title>
+      <sparkle:version>0.1.0</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 06 Oct 2026 18:22:54 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.0</link>
+      <description><![CDATA[<p dir="auto">HyperliquidX 0.1.0</p>
+<p dir="auto">Initial native macOS release, supporting Apple Silicon and Intel on macOS 14 or later.</p>
+<p dir="auto">The Release DMG workflow builds and verifies the installer, uploads it to the Cloudflare R2 hyperliquidx bucket and updates the download link at <a href="https://hypexapp.xyz" rel="nofollow">https://hypexapp.xyz</a> after validating the public checksum.</p>
+<p dir="auto">This build uses ad-hoc signing and is not Apple notarized. If macOS blocks the first launch, users who trust the download can use System Settings &gt; Privacy &amp; Security &gt; Open Anyway.</p>
+<p dir="auto">The application remains in active development. Real wallet, exchange lifecycle and native interaction acceptance are still pending; build and service tests do not establish mainnet trading readiness.</p>
+<p dir="auto">Public issue tracker: <a href="https://github.com/hyperliquidxapp/HyperliquidX/issues">https://github.com/hyperliquidxapp/HyperliquidX/issues</a></p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.0/d57299139fcd0edb7dadd3f19d4abe4bcc3cfaf1f52c50e4c5a6a7dec03d5e12/HyperliquidX-0.1.0.dmg" rel="nofollow">Download HyperliquidX 0.1.0 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 22.30 MiB (23382462 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">d57299139fcd0edb7dadd3f19d4abe4bcc3cfaf1f52c50e4c5a6a7dec03d5e12  HyperliquidX-0.1.0.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.0.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+    </item>
+  </channel>
+</rss>
