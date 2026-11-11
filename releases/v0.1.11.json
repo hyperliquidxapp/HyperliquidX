@@ -1,0 +1,14 @@
+{
+  "version": "0.1.11",
+  "name": "0.1.11",
+  "body": "改进 macOS 14 崩溃报告涉及的 HTTP 并发请求和取消处理。\n\n- 正式包、预览包、本地测试和 SDK CI 统一使用 Xcode 27.1／Swift 6.4，并校验具体编译器与 SDK 构建号。\n- 调整 HTTP 请求执行路径，保留请求大小限制、超时及取消行为。\n- 打包时运行真实的本地网络自检，覆盖并发请求、取消和恢复；可用 `--network-runtime-probe` 输出诊断结果。\n\nmacOS 14.6.1 的受影响设备暂时无法访问，因此尚未完成该系统的实机复测。新版本保留 macOS 14 部署目标；构建和测试记录会明确区分工具链一致性与旧系统运行验证。\n\n<!-- hyperliquidx-download:start -->\n## Download for macOS\n\n**[Download HyperliquidX 0.1.11 (.dmg)](https://downloads.hypexapp.xyz/releases/0.1.11/2282177a23e38f628e11e08e47aecad0418d2419fa95dc3065785527acb0370d/HyperliquidX-0.1.11.dmg)**\n\nApple Silicon + Intel · 43.37 MiB (45481601 bytes)\n\nAd-hoc signed. Not Apple notarized.\n\n### SHA-256\n\n```text\n2282177a23e38f628e11e08e47aecad0418d2419fa95dc3065785527acb0370d  HyperliquidX-0.1.11.dmg\n```\n\nVerify the downloaded installer in Terminal:\n\n```sh\nshasum -a 256 ~/Downloads/HyperliquidX-0.1.11.dmg\n```\n\nDrag HyperliquidX into Applications and launch it there.\nIf macOS blocks the first launch and you trust this download, use System Settings → Privacy & Security → Open Anyway.\n\nUse the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.\n<!-- hyperliquidx-download:end -->\n",
+  "url": "https://downloads.hypexapp.xyz/releases/0.1.11/2282177a23e38f628e11e08e47aecad0418d2419fa95dc3065785527acb0370d/HyperliquidX-0.1.11.dmg",
+  "sha256": "2282177a23e38f628e11e08e47aecad0418d2419fa95dc3065785527acb0370d",
+  "size": 45481601,
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "signing": "ad-hoc",
+  "notarized": false
+}
