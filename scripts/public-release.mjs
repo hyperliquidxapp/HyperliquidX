@@ -7,10 +7,11 @@ import { join } from 'node:path';
 import { Readable } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 import { pathToFileURL } from 'node:url';
+import { validateSparkleMetadata, verifySparkleArchive } from './sparkle-signature.mjs';
 
 export const publicRepository = 'hyperliquidxapp/HyperliquidX';
 const stable = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/;
-const fields = ['version', 'name', 'body', 'url', 'sha256', 'size', 'architectures', 'signing', 'notarized'];
+const fields = ['version', 'name', 'body', 'url', 'sha256', 'size', 'architectures', 'signing', 'notarized', 'sparkle'];
 
 export function validatePublicRelease(data) {
   if (!data || Object.keys(data).some(key => !fields.includes(key)) || !stable.test(data.version) ||
@@ -25,6 +26,7 @@ export function validatePublicRelease(data) {
       data.architectures.some(arch => !['arm64', 'x86_64'].includes(arch))) {
     throw new Error('Invalid public release metadata or private data included');
   }
+  if (data.sparkle !== undefined) validateSparkleMetadata(data.sparkle, data.version);
   return data;
 }
 
@@ -56,6 +58,7 @@ export async function verifyFile(file, release) {
   const hash = createHash('sha256');
   for await (const chunk of createReadStream(file)) hash.update(chunk);
   if (hash.digest('hex') !== release.sha256) throw new Error('DMG SHA-256 mismatch');
+  if (release.sparkle) await verifySparkleArchive(file, release.sparkle.edSignature);
 }
 
 export async function publishPublicRelease(release, {

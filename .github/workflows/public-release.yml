@@ -3,7 +3,7 @@ name: Publish public Release
 on:
   push:
     branches: [main]
-    paths: ['releases/**', 'scripts/sparkle-appcast*', '.github/workflows/public-release.yml']
+    paths: ['releases/**', 'scripts/**', '.github/workflows/public-release.yml']
   workflow_dispatch:
     inputs:
       tag:

@@ -40,3 +40,18 @@ test('Markdown rendering failures leave the published feed untouched', async () 
   await assert.rejects(buildAppcast([release('1.0.0')], () => { throw new Error('GitHub unavailable'); }),
     /GitHub unavailable/);
 });
+
+test('signed releases offer the exact verified installer and its full bundle version', async () => {
+  const signature = Buffer.alloc(64,1).toString('base64');
+  const metadata = {version:'0.1.11',size:1234,sha256:'a'.repeat(64),
+    url:`https://downloads.hypexapp.xyz/releases/0.1.11/${'a'.repeat(64)}/HyperliquidX-0.1.11.dmg`,
+    sparkle:{bundleVersion:'0.1.11.42',edSignature:signature}};
+  const live = {...release('0.1.11'),assets:[{name:'HyperliquidX-0.1.11.dmg',size:1234,digest:`sha256:${'a'.repeat(64)}`}]};
+  const xml = await buildAppcast([live],()=>'<p>Signed update</p>',[metadata]);
+  assert.match(xml,/<sparkle:version>0.1.11.42<\/sparkle:version>/);
+  assert.ok(xml.includes(`url="${metadata.url}" sparkle:edSignature="${signature}" length="1234"`));
+  for (const changed of [{size:1},{sha256:'b'.repeat(64)},{url:'https://example.com/update.dmg'},
+    {sparkle:{...metadata.sparkle,edSignature:'invalid'}}]) {
+    await assert.rejects(buildAppcast([live],()=>'<p>Notes</p>',[{...metadata,...changed}]));
+  }
+});
