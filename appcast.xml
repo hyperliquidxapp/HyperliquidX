@@ -6,6 +6,39 @@
     <description>Stable HyperliquidX releases for macOS</description>
     <language>en</language>
     <item>
+      <title>HyperliquidX v0.1.12</title>
+      <sparkle:version>0.1.12.21</sparkle:version>
+      <sparkle:shortVersionString>0.1.12</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 18 Nov 2026 09:45:02 GMT</pubDate>
+      <link>https://github.com/hyperliquidxapp/HyperliquidX/releases/tag/v0.1.12</link>
+      <description><![CDATA[<p dir="auto">Trade directly from a clearer, more flexible chart.</p>
+<ul dir="auto">
+<li>See open limit orders, stop-loss and take-profit levels, position PNL, and liquidation price on the chart's price axis, with consistent price precision.</li>
+<li>Drag supported order lines to change limit or trigger prices. Successful changes show a Toast and a macOS desktop notification.</li>
+<li>Edit position TP/SL from the Positions table, including optional order amounts and market or limit execution.</li>
+<li>Switch the lower chart between Volume, MACD, RSI, and KDJ. Drag the divider to resize the chart panes.</li>
+<li>Drag the main price axis to adjust its range; double-click to restore automatic scaling.</li>
+<li>Get signed in-app updates, with release notes and an optional automatic download and install setting.</li>
+</ul>
+<p dir="auto">Built for traders. Native to macOS.</p>
+
+<h2 dir="auto">Download for macOS</h2>
+<p dir="auto"><strong><a href="https://downloads.hypexapp.xyz/releases/0.1.12/7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d/HyperliquidX-0.1.12.dmg" rel="nofollow">Download HyperliquidX 0.1.12 (.dmg)</a></strong></p>
+<p dir="auto">Apple Silicon + Intel · 45.23 MiB (47424883 bytes)</p>
+<p dir="auto">Ad-hoc signed. Not Apple notarized.</p>
+<h3 dir="auto">SHA-256</h3>
+<pre lang="text" class="notranslate"><code class="notranslate">7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d  HyperliquidX-0.1.12.dmg
+</code></pre>
+<p dir="auto">Verify the downloaded installer in Terminal:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">shasum -a 256 <span class="pl-k">~</span>/Downloads/HyperliquidX-0.1.12.dmg</pre></div>
+<p dir="auto">Drag HyperliquidX into Applications and launch it there.<br>
+If macOS blocks the first launch and you trust this download, use System Settings → Privacy &amp; Security → Open Anyway.</p>
+<p dir="auto">Use the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.</p>
+]]></description>
+      <enclosure url="https://downloads.hypexapp.xyz/releases/0.1.12/7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d/HyperliquidX-0.1.12.dmg" sparkle:edSignature="u5h1jrhklk67+B6WXfIERtLRRpXnzgH53nXoe1kFAF39ZukIiSpFLAskijn7Y33td7W+wHP+P4ROhGMxj79rDg==" length="47424883" type="application/octet-stream" />
+    </item>
+    <item>
       <title>0.1.11</title>
       <sparkle:version>0.1.11</sparkle:version>
       <sparkle:shortVersionString>0.1.11</sparkle:shortVersionString>
