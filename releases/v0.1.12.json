@@ -1,0 +1,18 @@
+{
+  "version": "0.1.12",
+  "name": "HyperliquidX v0.1.12",
+  "body": "Trade directly from a clearer, more flexible chart.\n\n- See open limit orders, stop-loss and take-profit levels, position PNL, and liquidation price on the chart's price axis, with consistent price precision.\n- Drag supported order lines to change limit or trigger prices. Successful changes show a Toast and a macOS desktop notification.\n- Edit position TP/SL from the Positions table, including optional order amounts and market or limit execution.\n- Switch the lower chart between Volume, MACD, RSI, and KDJ. Drag the divider to resize the chart panes.\n- Drag the main price axis to adjust its range; double-click to restore automatic scaling.\n- Get signed in-app updates, with release notes and an optional automatic download and install setting.\n\nBuilt for traders. Native to macOS.\n\n<!-- hyperliquidx-download:start -->\n## Download for macOS\n\n**[Download HyperliquidX 0.1.12 (.dmg)](https://downloads.hypexapp.xyz/releases/0.1.12/7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d/HyperliquidX-0.1.12.dmg)**\n\nApple Silicon + Intel · 45.23 MiB (47424883 bytes)\n\nAd-hoc signed. Not Apple notarized.\n\n### SHA-256\n\n```text\n7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d  HyperliquidX-0.1.12.dmg\n```\n\nVerify the downloaded installer in Terminal:\n\n```sh\nshasum -a 256 ~/Downloads/HyperliquidX-0.1.12.dmg\n```\n\nDrag HyperliquidX into Applications and launch it there.\nIf macOS blocks the first launch and you trust this download, use System Settings → Privacy & Security → Open Anyway.\n\nUse the DMG installer above. GitHub’s automatic “Source code” archives contain only the public issue tracker’s materials, not the application source.\n<!-- hyperliquidx-download:end -->\n",
+  "url": "https://downloads.hypexapp.xyz/releases/0.1.12/7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d/HyperliquidX-0.1.12.dmg",
+  "sha256": "7a400772a8f489632b80a06bbd74b506b7ff4ee7e8223c3f780637199e97b95d",
+  "size": 47424883,
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "signing": "ad-hoc",
+  "notarized": false,
+  "sparkle": {
+    "bundleVersion": "0.1.12.21",
+    "edSignature": "u5h1jrhklk67+B6WXfIERtLRRpXnzgH53nXoe1kFAF39ZukIiSpFLAskijn7Y33td7W+wHP+P4ROhGMxj79rDg=="
+  }
+}
